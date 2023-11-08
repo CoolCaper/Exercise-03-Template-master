@@ -7,6 +7,7 @@ class Play extends Phaser.Scene {
         // add background image
         this.map = this.add.image(0, 0, 'map').setOrigin(0)
         this.cameras.main.setBounds(0, 0, this.map.width, this.map.height)
+        this.physics.world.setBounds(0, 0, this.map.width, this.map.height)
         this.hero = new Hero(this, 200, 150, 'hero', 0, 'down')
         this.cameras.main.startFollow(this.hero, false, 0.5, 0.5)
         // add new Hero to scene (scene, x, y, key, frame, direction)
