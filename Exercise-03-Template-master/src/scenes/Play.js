@@ -18,7 +18,7 @@ class Play extends Phaser.Scene {
         this.keys.FKey = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.F)
 
         // debug key listener (assigned to D key)
-        this.input.keyboard.on('keydown-D', function() {
+           this.input.keyboard.on('keydown-D', function() {
             this.physics.world.drawDebug = this.physics.world.drawDebug ? false : true
             this.physics.world.debugGraphic.clear()
         }, this)
